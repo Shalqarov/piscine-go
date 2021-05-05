@@ -7,12 +7,10 @@ func Sqrt(nb int) int {
 	if nb <= 3 {
 		return 0
 	}
-	for i := 1; i < nb/2; i++ {
+	for i := 1; i*i <= nb; i++ {
 		if i*i == nb {
 			return i
-		} else if i*i > nb {
-			return 0
 		}
 	}
-	return nb
+	return 0
 }
