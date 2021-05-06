@@ -10,7 +10,6 @@ func IsAlpha(s string) bool {
 				}
 			}
 		}
-
 	}
 	return true
 }
