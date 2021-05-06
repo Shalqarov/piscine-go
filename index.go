@@ -7,12 +7,11 @@ func Index(s string, toFind string) int {
 				return i
 			}
 			if j == len(toFind) {
-
+				continue
 			} else {
 				return i
 			}
 		}
-
 	}
 	return -1
 }
