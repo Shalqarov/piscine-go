@@ -6,7 +6,7 @@ func AppendRange(min, max int) []int {
 		return []int(nil)
 	}
 	mas := []int(nil)
-	for i := min; i < size+max; i++ {
+	for i := min; i < max; i++ {
 		mas = append(mas, i)
 	}
 	return mas
