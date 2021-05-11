@@ -42,7 +42,7 @@ func returnInt(num int) int {
 	return cnt
 }
 
-func print(pointers *point) {
+func PrintPoints(pointers *point) {
 	z01.PrintRune('x')
 	z01.PrintRune(' ')
 	z01.PrintRune('=')
@@ -60,6 +60,6 @@ func print(pointers *point) {
 func main() {
 	points := &point{}
 	setPoint(points)
-	print(points)
+	PrintPoints(points)
 	z01.PrintRune('\n')
 }
