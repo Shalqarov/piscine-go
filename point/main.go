@@ -35,6 +35,7 @@ func returnInt(num int) int {
 		num /= 10
 		cnt++
 	}
+
 	for i := len(numbers) - 1; i >= 0; i-- {
 		z01.PrintRune(numbers[i] + 48)
 	}
