@@ -28,10 +28,12 @@ func main() {
 		os.Exit(1)
 	}
 	cnt := toint(args[1])
+	exstatus := false
 	for i := 2; i < len(args); i++ {
 		file, err := os.Open(args[i])
 		if err != nil {
 			fmt.Printf(err.Error() + "\n")
+			exstatus = true
 		} else {
 			fStat, _ := file.Stat()
 			data := make([]byte, fStat.Size())
@@ -49,5 +51,8 @@ func main() {
 			fmt.Printf(string(data[begin:]))
 			file.Close()
 		}
+	}
+	if exstatus == true {
+		os.Exit(1)
 	}
 }
