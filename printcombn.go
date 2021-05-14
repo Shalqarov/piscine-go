@@ -3,6 +3,7 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintCombN(n int) {
+	var _ int
 	numbers := make([]int, n)
 	for i := 0; i < n; i++ {
 		numbers[i] = i
