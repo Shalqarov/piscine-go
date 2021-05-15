@@ -20,12 +20,10 @@ func PrintCombN(n int) {
 		for j := 0; j < n-1; j++ {
 			if numbers[j+1] >= 10 {
 				numbers[j+1] = numbers[j] + 1
-
 			}
 		}
 		if numbers[n-1] >= 10 {
 			continue
-
 		}
 		for i := 0; i < n; i++ {
 			z01.PrintRune(int32(numbers[i] + 48))
