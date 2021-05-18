@@ -8,7 +8,6 @@ func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *inter
 	if l.Head == nil {
 		return nil
 	}
-
 	temp := l.Head
 	for temp != nil {
 		if comp(temp.Data, ref) {
@@ -16,6 +15,5 @@ func ListFind(l *List, ref interface{}, comp func(a, b interface{}) bool) *inter
 		}
 		temp = temp.Next
 	}
-
 	return nil
 }
