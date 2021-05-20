@@ -3,7 +3,7 @@ package piscine
 func BTreeApplyByLevel(root *TreeNode, f func(...interface{}) (int, error)) {
 	size := BTreeLevelCount(root)
 	for i := 1; i <= size; i++ {
-		BtreeCurrentLevel(root, size, f)
+		BtreeCurrentLevel(root, i, f)
 	}
 }
 
